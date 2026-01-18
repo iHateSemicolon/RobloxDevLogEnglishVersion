@@ -1,0 +1,13 @@
+#Store script
+
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent:TweenPosition( 
+		UDim2.new(0.022, 0,1.2, 0), 
+		"Out", 
+		"Back",
+		1.5, 
+		false 
+	)
+	wait(1.5) 
+	script.Parent.Parent.Visible = false 
+end)
