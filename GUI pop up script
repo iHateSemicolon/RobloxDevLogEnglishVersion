@@ -1,0 +1,15 @@
+#store script
+
+game.Workspace:WaitForChild("ThE pArT'S naMe").ProximityPrompt.Triggered:Connect(function(plr)
+	script.Parent.Visible = true
+
+	script.Parent:TweenPosition( 
+		UDim2.new(Text button position ctrl+V), 
+		"Out",
+		"Back", 
+		0.5,
+		false
+	)
+
+	wait(0.5)
+end) 
