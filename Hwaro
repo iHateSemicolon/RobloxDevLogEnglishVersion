@@ -1,0 +1,24 @@
+# Character - Killer
+
+# Name: Hwaro(화로)
+
+## About
+- Normal attack damage: 16
+
+## Skills
+- **Cooking Target (E)**: Charges forward, dealing 15 damage to a survivor.  
+  After use, receives a burn debuff that slows movement for 10 seconds.
+
+- **Father's Appetite (Q)**: Increases movement speed.
+
+- **Appetite (R)**: Emits flames from the body.  
+  Survivors hit by the flames are restricted from using the "Appetite" skill once and receive a burn debuff.
+
+## Notes
+- Current draft: Hitbox, cooldown, and duration details partially missing  
+- Detailed effects of debuffs need to be added  
+- Damage values and buffs need to be specified  
+- Will be tested and revised later
+
+## Images
+![Hwaro](<img width="607" height="532" alt="Image" src="https://github.com/user-attachments/assets/afdfc9e7-5356-4a78-94b5-23dcd709f099" />)
