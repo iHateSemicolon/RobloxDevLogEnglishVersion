@@ -1,0 +1,20 @@
+# Character - Killer
+
+# Name: 079
+
+## About
+- Normal attack damage: 15
+
+## Skills
+- **CCTV Hacking (X)**: Reveals the location of a random survivor for 16 seconds
+
+- **D-Class Execution (E)**: Attacks survivors with a metal spear attached to the right arm
+
+- **Escape from Restraint (R, E)**: Press R to enter a rage state for 1 minute.  
+  While in rage, pressing E charges forward, piercing up to 2 survivors,  
+  and grants a speed boost and +2% damage buff (*usable once*)
+
+## Notes
+- Current draft: Hitbox, cooldown, and duration details partially missing  
+- Damage values for skills not finalized  
+- Will be tested and revised later
