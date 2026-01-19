@@ -1,0 +1,28 @@
+local TweenService = game:GetService("TweenService")
+local Camera = workspace.CurrentCamera
+
+local button = script.Parent
+local frame = button.Parent
+
+button.MouseButton1Click:Connect(function()
+	frame:TweenPosition(
+		UDim2.new(0.036, 0, 1.2, 0),
+		"Out",
+		"Back",
+		1.5,
+		false
+	)
+
+
+	TweenService:Create(
+		Camera,
+		TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+		{CFrame = _G.originalCFrame or Camera.CFrame}
+	):Play()
+
+	task.wait(0.8)
+	Camera.CameraType = Enum.CameraType.Custom
+
+	task.wait(0.7)
+	frame.Visible = false
+end)
