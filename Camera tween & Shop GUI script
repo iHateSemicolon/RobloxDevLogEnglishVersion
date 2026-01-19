@@ -1,0 +1,33 @@
+local TweenService = game:GetService("TweenService")
+local Camera = workspace.CurrentCamera
+
+local originalCFrame
+local NPC = workspace:WaitForChild("EPart")
+local Head = NPC:WaitForChild("Head")
+local Prompt = NPC:WaitForChild("ProximityPrompt")
+local Frame = script.Parent
+
+Prompt.Triggered:Connect(function()
+
+	Frame.Visible = true
+	Frame:TweenPosition(
+		UDim2.new(0.034, 0, 0.05, -50),--조정
+		"Out",
+		"Back",
+		0.5,
+		false
+
+	Camera.CameraType = Enum.CameraType.Scriptable
+	originalCFrame = Camera.CFrame
+	local baseCamPos = Head.CFrame.Position + (Head.CFrame.LookVector * 5) + Vector3.new(0, 0.5, 0)
+
+	local lookAtCFrame = CFrame.new(baseCamPos, Head.Position)
+
+	local targetCFrame = lookAtCFrame * CFrame.new(-2.2, 0, 0) 
+
+	TweenService:Create(
+		Camera,
+		TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+		{CFrame = targetCFrame}
+	):Play()
+end)
